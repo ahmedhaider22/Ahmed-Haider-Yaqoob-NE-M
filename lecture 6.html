@@ -1,0 +1,115 @@
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lecture 6</title>
+  </head>
+  <body>
+
+Discussion:-
+
+1. What are the differences between the opacity property and alpha channel in rgba or hsla?
+  Ans:-
+  1-Opacity Property:
+  Applies uniform transparency to the entire element and its children.
+  Values range from 0 (completely transparent) to 1 (fully opaque).
+  Child elements inherit the opacity of their parent.
+
+  2-Alpha Channel:-
+  Controls transparency for specific aspects like background, border, or text independently.
+  Alpha values range from 0 (fully transparent) to 1 (fully opaque).
+  Child elements are not automatically affected; transparency is applied only to the specified property.
+
+
+2. What is the most effective method for setting CSS background-color
+ properties?
+  Ans:-
+  choosing a method for setting a background-color
+   in css is personal but overall in my openion the Hexadecimal is the best.
+  
+
+3. Create 3 divisions in a web page. 
+• Make the first div has 3 paragraphs and each paragraph has a background with red background-color
+(Create a transition from darker red to a lighter).
+• Make the second div has an image background with horizontally repeated.
+• Add in the third div an image on the (right top) and make it fixed.
+• Add Box model on a text in the third div, that has Total element width equal 400px ?
+
+  Ans:-
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .first-p {
+        background-color: red;
+        opacity: 1;
+      }
+      .second-p {
+        background-color: red;
+        opacity: 0.6;
+      }
+      .third-p {
+        width: 400px;
+        background-color: red;
+        opacity: 0.3;
+      }
+      .second-div {
+        height: 100px;
+        background-image: url(img.jpg);
+        background-repeat: repeat-x;
+      }
+      .third-div {
+        height: 100px;
+        position: relative;
+      }
+      .third-div img {
+        width: 50px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p class="first-p">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+        distinctio praesentium ab minus numquam voluptas , pariatur explicabo
+        sequi veritatis eius nostrum voluptates natus eligendi fugiat molestias
+        ipsa quo sint doloribus!
+      </p>
+    </div>
+    <div class="second-div">
+      <p class="second-p">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+        distinctio praesentium ab minus numquam voluptas , pariatur explicabo
+        sequi veritatis eius nostrum voluptates natus eligendi fugiat molestias
+        ipsa quo sint doloribus!
+      </p>
+    </div>
+    <div class="third-div">
+      <p class="third-p">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+        distinctio praesentium ab minus numquam voluptas , pariatur explicabo
+        sequi veritatis eius nostrum voluptates natus eligendi fugiat molestias
+        ipsa quo sint doloribus!
+      </p>
+      <img src="img.jpg" alt="" />
+    </div>
+  </body>
+</html>
+
+
+      
+
+  </body>
+</html>
+
+     -->
